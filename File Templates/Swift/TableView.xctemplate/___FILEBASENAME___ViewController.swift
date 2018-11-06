@@ -47,7 +47,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UITableViewDelegate, UIT
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data!.count
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,8 +56,8 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UITableViewDelegate, UIT
         let cell: ___FILEBASENAMEASIDENTIFIER___Cell! = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? ___FILEBASENAMEASIDENTIFIER___Cell
         
         // Configure Cell
-        cell.configureWith(___VARIABLE_objectClass:identifier___: (data?[indexPath.row])!)
-        
+        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass))
+
         return cell
     }
     

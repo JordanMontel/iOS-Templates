@@ -47,7 +47,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UICollectionViewDelegate
     
     // MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data!.count
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -56,7 +56,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UICollectionViewDelegate
         let cell: ___FILEBASENAMEASIDENTIFIER___Cell! = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath as IndexPath) as? ___FILEBASENAMEASIDENTIFIER___Cell
         
         // Configure Cell
-        cell.configureWith(___VARIABLE_objectClass:identifier___: (data?[indexPath.row])!)
+        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass))
         
         return cell
     }
