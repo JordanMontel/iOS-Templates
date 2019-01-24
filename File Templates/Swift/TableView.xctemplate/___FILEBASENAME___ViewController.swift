@@ -56,7 +56,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UITableViewDelegate, UIT
         let cell: ___FILEBASENAMEASIDENTIFIER___Cell! = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? ___FILEBASENAMEASIDENTIFIER___Cell
         
         // Configure Cell
-        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass))
+        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass:identifier___))
 
         return cell
     }

@@ -56,7 +56,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UICollectionViewDelegate
         let cell: ___FILEBASENAMEASIDENTIFIER___Cell! = self.collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath as IndexPath) as? ___FILEBASENAMEASIDENTIFIER___Cell
         
         // Configure Cell
-        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass))
+        cell.configureWith(___VARIABLE_objectClass:identifier___: (data[indexPath.row] as! ___VARIABLE_objectClass:identifier___))
         
         return cell
     }
