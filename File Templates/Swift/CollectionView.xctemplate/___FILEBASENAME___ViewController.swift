@@ -27,7 +27,18 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UICollectionViewDelegate
         super.viewWillAppear(animated)
         
         // Refresh UI
-        refreshUI()
+        self.refreshUI()
+        
+        // Configure UI
+        self.configureUI
+        
+        // i18n
+        self.localizeView()
+    }
+    
+    // MARK: - Rotation
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
     
     // MARK: - Configuration Methods
@@ -35,6 +46,10 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, UICollectionViewDelegate
         
         // Reload
         self.collectionView.reloadData()
+    }
+    
+    func configureUI() {
+        
     }
     
     func localizeView() {
