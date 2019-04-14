@@ -24,11 +24,26 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         super.viewWillAppear(animated)
         
         // Refresh UI
-        refreshUI()
+        self.refreshUI()
+        
+        // Configure UI
+        self.configureUI
+        
+        // i18n
+        self.localizeView()
+    }
+    
+    // MARK: - Rotation
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
     }
     
     // MARK: - Configuration Methods
     func refreshUI() {
+        
+    }
+    
+    func configureUI() {
         
     }
     
